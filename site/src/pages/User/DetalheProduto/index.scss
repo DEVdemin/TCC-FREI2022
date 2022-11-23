@@ -1,0 +1,242 @@
+.page-detalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Nome-samurais{
+        font-family: 'Dela Gothic One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 67px;
+    }
+    .div-detalhes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5em;
+        width: 100%;
+    }
+
+    .imagens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            img {
+                width: 60px;
+                margin: 10px;
+            }
+        }
+        .atual img {
+            width: 350px;
+        }
+    }
+
+    .div-detalhes-pai {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 76%;
+        //border: solid 1px black;
+    }
+
+    .nome-produto {
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+
+        color: #000000;
+    }
+    .nome-marca{
+        font-size: 15px;
+        font-family: 'Dekko';
+        color: #000000;
+        font-weight: 400;
+        //border: solid 1px black;
+        width: fit-content ;
+        line-height: 2px;
+        text-align: center;
+    }
+
+    .infos-produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .preco-produto{
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+
+        color: #E52A45;
+    }
+
+    .tamanho-produto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    .aa{
+        margin-left: .2em;
+    }
+    .div-tamanhos{
+        display: flex;
+        flex-direction: row;
+    }
+    .div-tamanhos button{
+        background-color: #FFFFFF;
+        border: 1px solid #000000; border-radius: 5px;
+
+        width: 3em;
+        margin-top: .5em;
+    }
+
+    .imgs img {
+        width: 55%;
+    }
+
+    .div-btn-carrinho {
+        display: flex;
+        flex-direction: row;
+        margin-right: -4em;
+        margin-top: 1em;
+        //border: solid 1px green;
+    }
+    
+    .btn-carrinho{
+        width: 240px;
+        height: 54px;
+
+        border: transparent;
+        border-radius: 10px;
+        background: #E52A45;
+
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 51px;
+        text-align: center;
+
+        color: #FFFFFF;
+        margin-left: 1em;
+        margin-right: 3em;
+    }
+    .div-btn-favoritos{
+        cursor: pointer;
+        animation-delay: 0s;
+    }
+
+    hr {
+        margin-top: 2em;
+        border-width: 1px;
+        width: 100%;
+        height: 2px;
+        border-color: #000;
+        background-color: #000;
+    }
+
+    .descs {
+        display: flex;
+        align-self: flex-start;
+        font-family: 'Dela Gothic One';
+        font-size: 17px;
+    }
+
+    .descs label {
+        margin: 0em 1em
+    }
+
+    .descricao {
+        margin: 0em 1em 0em 0em !important;
+    }
+
+    li{
+        cursor: pointer;
+        position: relative;
+        color: #000;
+        text-decoration: none;
+        list-style-type: none;
+        
+    }
+
+    li:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    li:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    .descs-txt {
+        align-self: flex-start;
+    }
+
+    .avaliacoes{
+        box-sizing: border-box;
+        border: solid 1px black;
+        border-radius: 10px;
+        width: 300px;
+        padding: 1em 2em 0em 0.9em;
+        margin: 1em 0em;
+    }
+
+    .username {
+        display: flex;
+        align-items: center;
+    }
+
+    .username div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .username div h3 {
+        margin: 0;
+        font-family: 'Dela Gothic One';
+        font-size: 16px;
+    }
+
+    .descricao-aval {
+        font-family: 'Dekko';
+        margin-left: 4em;
+        width: 80%;
+    }
+
+    .descricao-aval p {
+        word-wrap: break-word;
+    }
+
+    .desc {
+        margin-bottom: 2em;
+    }
+}

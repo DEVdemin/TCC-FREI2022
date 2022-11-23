@@ -1,0 +1,57 @@
+.main-endereco{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .sec-row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5em;
+    }
+
+    .div-endereco{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin-left: 2em;
+    }
+
+    .titulo-enderecos h1{
+        font-family: 'Dela Gothic One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+    }
+    .titulo-enderecos label{
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .titulo-enderecos{
+        width: 95%;
+        border-bottom: 1px solid #000;
+    }
+
+    .card-endereco{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 2em;
+    }
+
+    .add-endereco button{
+        background-color: #E52A45;
+        border-radius: 10px;
+        border: transparent;
+
+        width: 19em;
+        height: 3.2em;
+
+        color: #FFFFFF;
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 12px;
+    }
+}

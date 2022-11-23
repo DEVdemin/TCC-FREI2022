@@ -1,0 +1,46 @@
+.main-config{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 1.2em 0em 3em 3em;
+    padding-right: 3em;
+    
+    border-collapse: collapse;
+    border-right: 1px solid #000000;
+
+    .titulo{
+        margin-top: -.5em;
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .infos-div{
+        width: max-content;
+        line-height: 5em;
+    }
+
+    .compras-config{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .compras-config label{
+        font-family: 'Dekko';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .div-texto{
+        margin-left: 0.5em;
+        margin-top: -0.3em;
+    }
+
+    .selecionado{
+        color: #E52A45;
+    }
+
+}

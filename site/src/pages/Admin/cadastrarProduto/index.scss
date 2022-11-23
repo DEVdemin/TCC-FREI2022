@@ -1,0 +1,379 @@
+.page-cadastrar-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .comps{
+        width: 100%;
+    }
+    select{
+        border-color: #DFDFDF;
+        border-radius: .4em;
+    }
+    select:focus{
+        outline: none;
+        border-color: #DFDFDF;
+    }
+
+/* COMEÇO TÍTULO */
+    .div-cadastrar{
+        margin-top: 4em;
+        margin-bottom: 3em;
+        border: 1.8px solid #000;
+        border-radius: 1em;
+        padding: 0em 2em;
+        width: fit-content;
+        height: max-content;
+    }
+    .tite{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 18em;
+    }
+    .tite hr{
+        border: none;
+        border-radius: .5em;
+        background-color: #E52A45;
+        margin: 0;
+        height: 2em; width: .4em;
+    }
+    .tite h2{
+        font-family: "Dela Gothic One", cursive;
+        font-size: 18px;
+        margin-left: 1em;
+    }
+/* FIM TÍTULO */
+
+
+/* COMEÇO INFO CADASTRAR (INFORMAÇÕES DE CADASTRAR NOVO PRODUTO) */
+    .infos-cadastrar{
+        display: flex;
+        margin-top: 5em;
+    }
+
+    .imgs{
+        margin-top: -1.5em;
+    }
+    .imgs input {
+        display: none;
+    }
+    .imgs div, .img-produto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7.2em; height: 8.5em;
+        cursor: pointer;
+    }
+    .imgs p {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        color: #D1C9C9;
+    }
+/* FIM INFO CADASTRAR (INFORMAÇÕES DE CADASTRAR NOVO PRODUTO) */
+
+
+/* COMEÇO DE ESTILIZAÇÃO PARA OS INPUTS IGUAIS */
+.sec-infos-produto-1 input,
+.sec-infos-produtos-2 input,
+.div-descricao textarea{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+
+    padding-left: .6em;
+    border: 1px solid #DFDFDF;
+    border-radius: .3em;
+}
+.sec-infos-produto-1 input:focus,
+.sec-infos-produtos-2 input:focus,
+.div-descricao textarea:focus{
+    outline: none;
+}
+.sec-infos-produto-1 input::placeholder,
+.sec-infos-produtos-2 input::placeholder,
+.div-descricao textarea::placeholder{
+    color: #CCCCCC;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+/* FIM DE ESTILIZAÇÃO PARA OS INPUTS IGUAIS */
+
+
+/* COMEÇO INFOS PRODUTO 1 (INFORMAÇÕES DO PRODUTO A SER CADASTRADO) */
+    .sec-infos-produto-1 {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        margin-top: -2em;
+    }
+    
+
+/* COMEÇO INFOS 1 (INFORMAÇÕES PT 1) */
+    .div-infos-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #nome-titulo{
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: .55em;
+    }
+    .div-infos-1 input{
+        margin-left: 1.2em;
+    }
+    .sla{
+        margin-left: 1.3em;
+    }
+    #titulos{
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    #nome{
+        height: 2.3em; width: 10.5em;
+    }
+    #preco{
+        height: 2.3em; width: 8.3em;
+    }
+    label:not(#titulos, #tipo-titulo, #nome-titulo, #marca-titulo, #categoria-titulo){
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: .3em;
+    }
+/* FIM INFOS 1 (INFORMAÇÕES PT 1) */
+
+
+/* COMEÇO INFOS 2 (INFORMAÇÕES PT 2) */
+    .div-infos-2{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1em;
+    }
+    #tipo-titulo{
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 2.38em;
+    }
+/* FIM INFOS 2 (INFORMAÇÕES PT 2) */
+
+
+/* COMEÇO INFOS 3 (INFORMAÇÕES PT 3) */
+    .div-infos-3{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.5em;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    #estoque{
+        font-weight: 700;
+        width: 3em; height: 1.5em;
+        background-color: #EFEFEF;
+        border: 1px solid #000;
+        border-radius: .4em;
+        color: #000;
+        margin-left: .7em;
+    }
+
+    .promocao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-left: 4.3em;
+    }
+/* FIM INFOS 3 (INFORMAÇÕES PT 3) */
+
+
+/* COMEÇO INFOS 4 (INFORMAÇÕES PT 4) */
+    .div-marcas{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1.5em;
+    }
+    #marca-titulo{
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 1.4em;
+    }
+/* FIM INFOS 4 (INFORMAÇÕES PT 4) */
+
+
+/* COMEÇO LINHA 1 (LINHA PT 1) */
+   
+    .linha {
+        height: 437px;
+        border: 1px solid #CCCCCC;
+        margin: -2em 2em 0em 2em;
+    }
+/* FIM LINHA 1 (LINHA PT 1) */
+
+
+/* COMEÇO LINHA 2 (LINHA PT 2) */
+    .linha2 {
+        height: 437px;
+        border: 1px solid #CCCCCC;
+        margin: 0em 2.5em;
+    }
+/* FIM LINHA 2 (LINHA PT 2) */
+
+/* FIM INFOS PRODUTO 1 (INFORMAÇÕES DO PRODUTO A SER CADASTRADO) */
+
+
+
+/* COMEÇO INFOS PRODUTO 2 (INFORMAÇÕES DO PRODUTO A SER CADASTRADO) */
+    .sec-infos-produtos-2{
+        display: flex;
+        flex-direction: row;
+        margin-left: -1.2em;
+        margin-top: -2em;
+    }
+
+/* COMEÇO DIV DA DESCRIÇÃO GERAL */
+    .div-informacoes2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0em;
+    }
+    .div-descricao{
+        display: flex;
+        flex-direction: row;
+        margin-left: -1em;
+    }
+    .div-descricao label{
+        width: 7.7em;
+        margin-top: 0.8em;
+        margin-right: 0.7em;
+    }
+    .div-descricao textarea{
+        resize: none;
+        padding-top: .7em;
+        width: 17em; height: 18em;
+    }
+/* FIM DIV DA DESCRIÇÃO GERAL */
+
+/* COMEÇO DIV DA CATEGORIA */
+    .div-categoria, .importado{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        margin-top: 2.8em;
+        margin-bottom: -4em;
+    }
+    #categoria-titulo, #importado-titulo {
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 1.4em;
+        margin-left: -1em;
+    }
+
+
+/* FIM DIV DA CATEGORIA */
+
+/* FIM INFOS PRODUTO 2 (INFORMAÇÕES DO PRODUTO A SER CADASTRADO) */
+
+/* COMEÇO DIV DO BOTÃO DE SALVAR */
+    .div-button-salvar-novo{
+        margin: 0em 1.7em 1.5em 0em;
+        float: right;
+    }
+    .div-button-salvar-novo button{
+        text-align: center;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 16px;
+        color: #FFFFFF;
+        
+        width: 100px;
+        height: 36px;
+        
+        background-color: #E52A45;
+        border: transparent;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .aa{
+        margin-left: 1em;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .div-cadastrar{
+            width: 80%;
+            height: max-content;
+        }
+        .imgs div, .img-produto {
+            width: 6em; height: 7.5em;
+        }
+        #nome{
+            height: 2.3em; width: 6.5em;
+        }
+        #preco{
+            height: 2.3em; width: 5.3em;
+        }
+
+        .div-descricao{
+            margin-left: -1.5em;
+        }
+        .div-descricao label{
+            width: 7.7em;
+            margin-top: 0.8em;
+            margin-right: -2em;
+        }
+        .div-descricao textarea{
+            width: 12em; height: 18em;
+        }
+    }
+}
+
+
+
+
+/* guarda(nao apaga) */
+/* .tipo-produto{
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 1.4em;
+    }
+
+    .tipos-produtos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: .1em;
+    }
+    .div-tipos{
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .input-tipo-skate{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 1em;
+        width: 9.2em;
+    }
+    .input-tipo-skate #label-tipo-skate{
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+    } */

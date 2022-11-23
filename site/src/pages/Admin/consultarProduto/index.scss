@@ -1,0 +1,105 @@
+.page-consultar-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .comps{
+        width: 100%;
+    }
+
+
+/* COMEÇO SECTION EXPLICANDO A CONSULTA DE PRODUTO DO SITE */
+    .sec-explicando-page{
+        margin-top: 1.2em;
+        margin-bottom: 2.5em;
+        font-family: "Inter", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .div-ul{
+        margin-left: -1.5em;
+    }
+/* FIM SECTION EXPLICANDO A CONSULTA DE PRODUTO DO SITE */
+
+
+/* COMEÇO CAIXA DE BUSCA */
+    .caixa-busca {
+        display: flex;
+        justify-content: space-between;
+
+        background-color: #fff;
+        border-radius: 9px;
+        border: 1px solid #696969;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+        padding: 10px 20px;
+        width: 30%;
+        margin-top: 1em;
+        margin-bottom: 5em;
+    }
+    .caixa-busca input {
+        background: none;
+        border: none;
+        padding: 0px;
+        width: 100%;
+    }
+    .caixa-busca input:focus{
+        outline: none;
+    }
+    .caixa-busca img{
+        width: 30px; height: 30px;
+        cursor: pointer;
+        position: relative;
+        right: -7px;
+    }
+/* FIM CAIXA DE BUSCA */
+
+
+/* COMEÇO CARDS DOS PRODUTOS */
+    .div-card-produto{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        word-wrap: break-word;
+
+        margin-bottom: 1.5em;
+        padding: 1.5em 1.5em;
+        width: 65%;
+
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .div-produto-card-produto{
+        width: 11.2em;
+    }
+    .div-tipo{
+        width: 7em;
+        margin-left: 3em;
+    }
+    .div-marca{
+        width: 10em;
+        margin-left: 1.7em;
+    }
+    .div-preco{
+        margin-left: 4em;
+        width: 7em;
+    }
+    .div-disponivel{
+        width: 7em;
+        margin-left: 3em;
+    }
+
+    .div-editar-deletar button{
+        width: 2em; height: 2em;
+        cursor: pointer;
+
+        border: transparent;
+        background-color: inherit;
+    }
+    .editar-button{
+        margin-right: .2em;
+    }
+/* FIM CARDS DOS PRODUTOS */
+}

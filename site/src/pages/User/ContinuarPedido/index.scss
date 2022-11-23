@@ -1,0 +1,334 @@
+.main-continuarPedido{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+
+    .header-pedido{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .div-finalizarpedido{
+        margin: 9em 3em 0em 0em;
+        align-items: center;
+        text{
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        span{
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        button{
+            width: 240px;
+            height: 43px;
+
+            color: #FFFFFF;
+            background: #E52A45;
+            border: transparent;
+            border-radius: 20px;
+
+            font-family: 'Dela Gothic One', cursive;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            margin-left: 2.5em;
+        }
+    }
+
+    .aside-lado-a-lado{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .sec-enderecos{
+        flex-wrap: wrap;
+        padding: 0em 0em 4em 1.5em;
+        width: 40%;
+
+        background: #FFFFFF;
+        border: transparent;
+        box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+        p{
+            font-family: 'Dela Gothic One', cursive;
+            font-size: 22px;
+        }
+    }
+    .card-endereco-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .div-button{
+        button{
+            background-color: #E52A45;
+            border: transparent;
+            border-radius: 10px;
+            width: 20em;
+            height: 3em;
+
+            font-family: 'Dela Gothic One', cursive;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17px;
+
+            color: #FFFFFF;
+        }
+    }
+
+
+/******************************************************************************/
+
+    .sec-pagamento{
+        margin-left: 2.5em;
+        padding: .5em 0em 1.5em 1.5em;
+        width: 45%;
+
+        background: #FFFFFF;
+        border: transparent;
+        box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+
+        h2{
+            font-family: 'Dela Gothic One', cursive;
+            font-size: 22px;
+            line-height: 17px;
+        }
+        img{
+            width: 18px; height: 18px;
+        }
+        text{
+            font-family: 'Dekko', sans-serif;
+            font-size: 14px;
+        }
+    }
+
+    .div-boleto{
+        margin-top: 2em;
+    }
+    .boleto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -.5em;
+        margin-left: .5em;
+        img{
+            margin-left: .7em; margin-right: .3em;
+        }
+        text{
+            margin-top: 1em;
+            width: 43em;
+        }
+    }
+
+    .pix{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: -.6em;
+        margin-left: .5em;
+        img{
+            margin-left: .7em; margin-right: .3em;
+        }
+        text{
+            margin-top: 1em;
+            width: 30em;
+        }
+    }
+
+    .div-cartao-credito{
+        .btn-add-cartao{
+            background-color: #E52A45;
+            border-radius: 10px;
+            border: transparent;
+
+            width: 19em;
+            height: 3.2em;
+            margin-bottom: 1.2em; margin-top: .8em;
+
+            color: #FFFFFF;
+            font-family: 'Dela Gothic One', cursive;
+            font-size: 12px;
+        }
+
+        .card-cartao-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+
+    .div-cartoes-cadastrados{
+        margin-bottom: 2em;
+        width: 10em;
+        align-items: center;
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-shadow: 6px 10px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+
+    .div-cartoes-cadastrados h3{
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #E52A45;
+    }
+
+    .div-cartoes-cadastrados:hover{
+        cursor: pointer;
+    }
+
+    .cartao-credito{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        width: 28em;
+        height: 15em;
+
+        background: #EBEBEB;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    .cartao-infos{
+        margin-left: 0em; margin-right: 0; margin-top: 1.2em;
+        .cartao-p-1{
+            margin-top: 0em;
+        }
+        p{
+            font-family: 'Dekko', sans-serif;
+            font-size: 20px;
+
+            width: 9em;
+            margin-bottom: -.9em;
+        }
+    }
+    .cartao-inputs{
+        margin-top: .6em;
+    }
+    .cartao-inputs input:not(input[type="checkbox"]), select{
+        margin-bottom: .8em;
+        width: 14.5em;
+        height: 1.5em;
+
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+    input:focus, select:focus{
+        outline: none;
+    }
+    
+    #input-1{
+        margin-top: 1em;
+    }
+    #input-2{
+        margin-top: .1em;
+    }
+    #vencimento{
+        width: 5em; height: 1.5em;
+    }
+    #cvv{
+        width: 7.7em;
+        margin-bottom: 1em;
+    }
+    .select-parcela{
+        margin-top: .3em;
+    }
+
+    .div-cupom{
+        margin-top: 2em;
+    }
+
+/******************************************************************************/
+
+    .itens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-family: 'Dekko', sans-serif;
+        font-style: normal;
+
+        width: 100%;
+        margin-bottom: 10em;
+    }
+    table {
+        width: 95%;
+        border-collapse: collapse;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    th{
+        font-family: 'Dekko', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        color: #000000;
+        padding: 20px 10px;
+        text-align: center;
+        border-bottom: 1px solid #cfcfcf;
+    }
+    td {
+        padding: 20px 10px;
+        text-align: center;
+        border-bottom: 1px solid #cfcfcf;
+        color: #767676;
+    }
+    tr th:first-child {
+        text-align: left;
+    }
+    th {
+        font-weight: 500;
+        border-bottom: 1px solid #b4b4b4;
+    }
+
+    th:first-child {
+        width: 50%;
+    }
+
+    .celula-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+    .celula-item h3 {
+        font-family: 'Dekko', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+
+        margin: 2px 0px;
+        color: #575757;
+    }
+    .celula-item img {
+        width: 10em;
+        height: 100px;
+        margin-right: 15px;
+    }
+    .celula-item h4 {
+        margin-top: 0em;
+        color: #808080;
+        font-weight: 500;
+    }
+}

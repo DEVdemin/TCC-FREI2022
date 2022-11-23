@@ -1,0 +1,132 @@
+.rodape-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #E9E9E9;
+    width: 100%;
+
+    h2{
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 10px;
+        font-weight: 400;
+    }
+    h3{
+        font-family: 'Dekko', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    span, text{
+        font-family: 'Dekko', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .div-separa-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+    h2{
+        font-size: 24px;
+        margin-bottom: 1.2em;
+    }
+    h3{
+        font-size: 20px;
+        margin-bottom: .7em;
+    }
+
+    .logo-rodape{
+        width: 8.6em;  height: 8em;
+    }
+    .contato,
+    .rdsc,
+    .icon-pag-a-vista,
+    .icon-pag-a-prazo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+/* INICIO div de contatos */
+    .div-contatos{
+        text-align: center;
+    }
+    .email{
+        margin-top: -.5em;
+    }
+    .div-contatos img{
+        width: 2em;  height: 2em;
+    }
+    .div-contatos span{
+        margin-left: 1em;
+    }
+    .text-telefone{
+        margin-left: 2.6em;
+    }
+
+/* INICIO div das redes sociais */
+    .div-criadores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .nomes-criadores{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: -.5em;
+        p{
+            font-family: 'Dekko', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+/* FINAL div das redes sociais */
+
+
+/* INICIO div dos pagamentos */
+    .div-forma-pagamento{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pag-a-vista{
+        margin-top: -1.5em;
+    }
+    .icon-pag-a-vista img{
+        width: 3em;  height: 3em;
+    }
+    .icon-pag-a-vista img:not(.boleto){
+        margin-left: .8em;
+    }
+
+    .h3-pag-a-prazo{
+        margin-top: 1em;
+    }
+    .icon-pag-a-prazo{
+        flex-wrap: wrap;
+        width: 14em;
+    }
+    .elo{
+        margin-left: .6em;
+    }
+    .diners-club{
+        margin-left: .2em;
+    }
+    .mercado-pago{
+        margin-left: .5em;
+    }
+    .icon-pag-a-prazo .icon{
+        width: 3em;  height: 3em;
+    }
+    .icon-pag-a-prazo .icon2{
+        width: 4em;  height: 3em;
+    }
+/* FINAL div dos pagamentos */
+}

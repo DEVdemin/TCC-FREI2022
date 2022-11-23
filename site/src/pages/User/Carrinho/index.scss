@@ -1,0 +1,275 @@
+.main-carrinho{
+    margin: 0; padding: 0;
+    display: flex;
+    flex-direction: column;
+
+/* COMEÇO SECTION 1 */
+    .sec-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-1 > p{
+        font-size: 30px;
+        font-family: 'Dela Gothic One', cursive;
+    }
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+    .sec-1 hr{
+        margin-top: 3em;
+        width: 95%;
+        border: 1px solid #000000;
+        transform: rotate(-0.09deg);
+    }
+
+    .sec-carrinho-item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .div-carrinho-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .botao-excluir{
+        background-color: #E52A45;
+        border: transparent;
+        border-radius: 10px;
+        width: 8em;
+        height: 3em;
+
+        font-family: 'Dela Gothic One', cursive;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #FFFFFF;
+        /* color: #E52A45;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer; */
+
+        margin-right: 8em; margin-top: 7em;
+    }
+/* FINAL SECTION 1 */
+
+
+/* COMEÇO SECTION 2 */
+    .sec-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 3em;
+    }
+
+    .div-left{
+        margin-left: 5em;
+    }
+    .div-left span{
+        font-size: 20px;
+        font-family: 'Dela Gothic One', cursive;
+    }
+    .div-left p{
+        font-size: 18px;
+        font-family: 'Dekko', sans-serif;
+    }
+
+    .div-right{
+        margin-right: 5em;
+    }
+    .div-right > text{
+        font-size: 20px;
+        font-family: 'Dela Gothic One', cursive;
+    }
+    .div-right span{
+        font-size: 18px;
+        font-family: 'Dekko', sans-serif;
+    }
+    .div-right hr{
+        margin-top: .8em;
+        width: 556px;
+
+        border: 1px solid #000000;
+        transform: rotate(0.21deg);
+    }
+
+    .div-subtotal,
+    .div-frete {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 1em;
+    }
+
+    .div-total{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .div-total > span{
+        font-size: 18px;
+        font-family: 'Dekko', sans-serif;
+    }
+    .div-total > div{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+    .div-total div > text{
+        margin-bottom: .5em;
+        font-size: 22px;
+        font-family: 'Dela Gothic One', cursive;
+    }
+/* FINAL SECTION 2 */
+
+
+/* COMEÇO SECTION 3 */
+
+    .sec-3 button{
+        width: 17em;
+        height: 3.5em;
+        margin: 1em 5.9em 10em 0;
+        float: right;
+
+        background-color: #E52A45;
+        border: transparent;
+        border-radius: .5em;
+    }
+    .sec-3 button span{
+        font-size: 18px;
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+    }
+
+/* FINAL SECTION 3 */
+
+/* RESPONSIVIDADE */
+
+    @media screen and (max-width: 1024px) {
+        .sec-carrinho-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-right: 3em;
+        }
+        .div-carrinho-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 50%;
+        }
+        .botao-excluir{
+            margin-left: 11em; margin-top: 0;
+        }
+
+        .div-right > text,
+        .div-left span{
+            font-size: 18px;
+        }
+        .div-right span,
+        .div-left p,
+        .div-total > span,
+        .sec-3 button span{
+            font-size: 16px;
+        }
+        .div-right hr{
+            width: 450px;
+        }
+        .div-total > div{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        .div-total div > text{
+            font-size: 20px;
+        }
+
+        .sec-3 button{
+            width: 16em;
+            margin: 1em 6em 10em 0;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        .sec-2{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .div-left{
+            width: 90%;
+            margin-left: 0;
+        }
+
+        .div-right{
+            width: 90%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .div-right hr{
+            margin-top: .8em;
+            width: 100%;
+        }
+
+        .sec-3 button{
+            width: 16em;
+            margin: 1em 1em 10em 0;
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        .sec-carrinho-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .div-carrinho-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .sec-carrinho-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .div-carrinho-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .botao-excluir{
+            margin-left: 0; margin-top: 0; margin-right: -3.4em;
+        }
+
+        .sec-1 > p{
+            font-size: 20px;
+        }
+    }
+}

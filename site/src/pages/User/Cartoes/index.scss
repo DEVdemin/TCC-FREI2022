@@ -1,0 +1,55 @@
+.main-pagamento {
+    display: flex;
+    flex-direction: column;
+
+    .sec-row-3{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 5em;
+    }
+
+    .div-pagamento {
+        display: flex;
+        flex-direction: column;
+        width: 68%;
+        margin-left: 2em;
+    }
+    .div-pagamento h1 {
+        font-family: 'Dela Gothic One', cursive;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .div-pagamento label {
+        font-family: 'Dekko', cursive;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .div-titulo-pagamento {
+        width: 80%;
+        border-bottom: 1px solid #000;
+    }
+    .add-cartao{
+        background-color: #E52A45;
+        border-radius: 10px;
+        border: transparent;
+
+        width: 19em;
+        height: 3.2em;
+
+        color: #FFFFFF;
+        font-family: 'Dela Gothic One', cursive;
+        font-size: 12px;
+    }
+    .card-cartao-row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 1em;
+    }
+}

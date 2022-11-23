@@ -1,0 +1,119 @@
+.page-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        height: 20em;
+        margin-top: 16em;
+        margin-left: 4.3em;
+    }
+
+    .barra_lateral {
+        background-color: #E52A45;
+        height: 40em;
+        width: 10px;
+        margin-top: 9em;
+    }
+
+    .email,
+    .senha {
+        width: 30em;
+        height: 3.8em;
+        background-color: #E9E9E9;
+        border: transparent;
+        font-size: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .email,
+    .senha:focus {
+        outline: none;
+
+    }
+
+    .botoes {
+        margin-top: 15em;
+        margin-right: 5em;
+    }
+
+    .titulo {
+        margin-top: -2em;
+        margin-bottom: 1em;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Dela Gothic One', cursive;
+    }
+
+    h6 {
+        margin-bottom: 0.7em;
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+    }
+        
+    .botao {
+         display: flex;
+         justify-content: center;
+         margin-bottom: 2em;
+    }
+
+    .criar-conta {
+        display:flex;
+        justify-content: center;
+        font-family:'Timmana', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .olho_mostrar_senha{
+        position: absolute;
+        margin-top: 1em;
+        margin-left: -3em;
+        cursor: pointer;
+    }
+    .cx2{
+        margin-bottom: 1em;
+    }
+    .ERRO {
+        font-family: 'inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+
+        position: absolute;
+        margin-left: -1.5em;
+    }
+
+    .entrar{
+        width: 120px; height: 40px;
+        margin-top: 1em; margin-bottom: -.5em;
+        padding-top: .15em;
+
+        border: transparent;
+        border-radius: 14px;
+        background: #E52A45;
+
+        font-family: 'Timmana', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .barra_lateral{
+            width: 10px; height: 30em;
+        }
+        .logo{
+            width: 20em; margin-right: 1em;
+        }
+        .email,
+        .senha {
+            width: 25em;
+            height: 3.8em;
+        }
+    }
+}
+

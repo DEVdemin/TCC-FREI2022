@@ -1,0 +1,96 @@
+.comp-navs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 8em;
+    background-color: #E52A45;
+
+    .div-navs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2em;
+    }
+
+    .navs-produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.7em 2.5em;
+    }
+
+    .navs-produtos:hover{
+        background-color: #292929;
+    }
+    .selecionado{
+        background-color: #292929;
+    }
+
+    .navs-produtos span{
+        font-family: 'Dela Gothic One', cursive;
+        color: #fff;
+    }
+    .imgs-nav{
+        width: 50px; height: 50px;
+    }
+
+    .div-buscar{
+        display: flex;
+        flex-direction: row;
+
+        margin-top: .5em;
+        margin-right: 3em;
+    }
+    .div-buscar::before{
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background: #000;
+        transform: scaleX(0);
+        transform-origin: center;
+        transform-origin: left;
+        transition: transform .25s;
+    }
+    .div-buscar:focus-within::before{
+        transform: scale(1);
+    }
+
+    .buscar-input::placeholder{
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+    .buscar-input{
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        border: 0 #fff;
+        border-radius: 5px;
+        padding-left: 1em;
+        padding-right: 2em;
+
+        width: 246px;
+        height: 50px;
+    }
+    .buscar-input:focus {
+        color: #000;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        box-shadow: none;
+        outline: 0;
+    }
+
+    .buscar-img{
+        margin-left: -2.5em;
+        margin-top: .5em;
+
+        width: 35px;
+        height: 35px;
+    }
+
+}
